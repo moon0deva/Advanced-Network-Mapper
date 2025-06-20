@@ -18,18 +18,16 @@ This tool is ideal for system administrators, cybersecurity professionals, and p
 
 **HOW TO RUN THE SCRIPT**
 
+
+<pre><code>
 python -m venv /path/to/new/virtual/environment #Create a venv Environment
-
 Source /path/to/new/virtual/environment/bin/activate # Activate venv
-
 apt install nmap # nmap
-
 pip3 install jinja2 # Jinja
-
 chmod +x ANM.py # permission
-
 ./ANM.py # Run the script
-
+</code> </pre>
+  
 **CONFIGURE THE SCRIPT**
 
 Before running the script, you'll need to update a few variables at the top of the file to match your network environment and scanning needs.
