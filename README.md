@@ -2,7 +2,7 @@ Advanced Network Mapper (ANM) is a Python 3-based utility that performs fast and
 
 This tool is ideal for system administrators, cybersecurity professionals, and penetration testers looking to quickly assess the state of hosts on a network.
 
-**Features**
+**FEATURES**
 
 ~ Parses nmap XML output directly
 
@@ -16,24 +16,33 @@ This tool is ideal for system administrators, cybersecurity professionals, and p
 
 ~ No database or external service dependencies
 
-Ensure Python 3 and nmap are installed on your system:
+**HOW TO RUN THE SCRIPT**
 
 python -m venv /path/to/new/virtual/environment #Create a venv Environment
+
 Source /path/to/new/virtual/environment/bin/activate # Activate venv
+
 apt install nmap # nmap
+
 pip3 install jinja2 # Jinja
+
 chmod +x ANM.py # permission
+
 ./ANM.py # Run the script
 
-**Configure the script**
+**CONFIGURE THE SCRIPT**
+
 Before running the script, you'll need to update a few variables at the top of the file to match your network environment and scanning needs.
 
 Open the Python script (ANM.py) in your favorite text editor and locate the following section near the top:
 
-# -------- SETTINGS --------
+**SETTINGS**
 subnet = "your IP HEre/subnet"  # example: 192.168.0.0/24
+
 common_ports = "22,80,443,3306,8080,8443"  # Ports
+
 output_json = "scan_report.json"
+
 output_html = "scan_report.html"
 
 Avoid wide scans in production environments unless you know the risks.
