@@ -37,7 +37,7 @@ Before running the script, you'll need to update a few variables at the top of t
 Open the Python script (ANM.py) in your favorite text editor and locate the following section near the top:
 
 **SETTINGS**
-subnet = "your IP HEre/subnet"  # example: 192.168.0.0/24
+subnet = "your IP Here/subnet"  # example: 192.168.0.0/24
 
 common_ports = "22,80,443,3306,8080,8443"  # Ports
 
